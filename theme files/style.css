@@ -28,6 +28,12 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
  * http://dev.jennymag.org/wp-content/uploads/2022/03/BannerAnim60.mp4
  * */
 
+/* Color variable. Huh. New to me.*/
+
+:root {
+  --jennyaccent: #dab283;
+  --jennyheading: #2c3554;
+}
 
 
 /* Typography */
@@ -65,9 +71,17 @@ h1.wp-block-site-title {
 	margin: 15px 12px 15px 0px !important; 
 }
 
+/* Piece titles (custom H3 style) */
+
+.piecetitle {
+	margin-left: 0px !important;
+    padding-left: 0px !important;
+    font-size: 2rem;
+}
+
 /* Menu item color. for the eyegrabbers on donating and submitting*/
 .highlight {
-    background-color: #dab283 !important;
+    background-color: var(--jennyaccent) !important;
 }
 
 nav, wp-block-navigation__container li, .wp-block-navigation {
@@ -75,15 +89,15 @@ nav, wp-block-navigation__container li, .wp-block-navigation {
 }
 
 .entry-content p , .entry-content span, .entry-content a {
-	font-family: sans serif;
+	font-family: sans-serif;
 	}
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content a, .wp-block-post-title {
-	color: #2c3554 !important;
+	color: var(--jennyheading) !important;
 }
 
 .wp-block-pullquote {
-	border-color: #2c3554 !important;
+	border-color: var(--jennyheading) !important;
 }	
 
 .wp-block-columns {
@@ -92,6 +106,26 @@ nav, wp-block-navigation__container li, .wp-block-navigation {
     margin-right: auto;
 }
 
+/* Background */
+
+.wp-site-blocks {
+	background-image: url("gritbg.png");
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Not sure how much of this I have touched, just spacing it from the rest of my major edits */ 
 
 /*.wp-block-post-content {
 max-width: 1000px;
